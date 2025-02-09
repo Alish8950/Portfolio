@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Agustina";
+  src: url("./assets/fonts/Agustina-Signature.otf") format("opentype"); /* Adjust the path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  @apply text-text-light dark:text-text-dark;
+}
+
+@theme {
+  /* --------------------------------------------------
+       Base Fonts (unchanged)
+    -------------------------------------------------- */
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* --------------------------------------------------
+       Base Colors (for common use)
+    -------------------------------------------------- */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* ==================================================
+       LIGHT THEME COLORS
+    ================================================== */
+  /* Overall background, text, and border */
+  --color-bg-light: #f9fafb; /* Very light gray background */
+  --color-text-light: #1f2937; /* Dark gray text */
+  --color-border-light: #d1d5db; /* Light gray border */
+
+  /* Blue Accent Palette for Light Theme */
+  --color-light-50: #f0f9ff;
+  --color-light-100: #e0f2fe;
+  --color-light-200: #bae6fd;
+  --color-light-300: #7dd3fc;
+  --color-light-400: #38bdf8;
+  --color-light-500: #0ea5e9; /* Primary blue */
+  --color-light-600: #0284c7; /* Hover blue */
+  --color-light-700: #0369a1; /* Active blue */
+  --color-light-800: #075985;
+  --color-light-900: #0c4a6e; /* Darkest blue */
+
+  /* Semantic Aliases for Light Theme */
+  --color-primary-light: var(--color-light-500);
+  --color-primary-light-hover: var(--color-light-400);
+  --color-primary-light-active: var(--color-light-600);
+  --color-on-primary-light: var(--color-white); /* Text on blue buttons */
+
+  --color-button-bg-light: var(--color-primary-light);
+  --color-button-text-light: var(--color-on-primary-light);
+  --color-input-bg-light: var(--color-white);
+  --color-input-text-light: var(--color-text-light);
+  --color-input-border-light: var(--color-border-light);
+
+  /* ==================================================
+       DARK THEME COLORS
+    ================================================== */
+  /* Overall background, text, and border */
+  --color-bg-dark: #1f2937; /* Dark gray background */
+  --color-text-dark: #f9fafb; /* Light gray text */
+  --color-border-dark: #4b5563; /* Dark gray border */
+
+  /* Blue Accent Palette for Dark Theme */
+  --color-dark-50: #0c4a6e; /* Adjusted for visibility */
+  --color-dark-100: #075985;
+  --color-dark-200: #0369a1;
+  --color-dark-300: #0284c7;
+  --color-dark-400: #0ea5e9; /* Primary blue */
+  --color-dark-500: #38bdf8; /* Hover blue */
+  --color-dark-600: #7dd3fc; /* Active blue */
+  --color-dark-700: #bae6fd;
+  --color-dark-800: #e0f2fe;
+  --color-dark-900: #f0f9ff; /* Lightest blue */
+
+  /* Semantic Aliases for Dark Theme */
+  --color-primary-dark: var(--color-dark-400);
+  --color-primary-dark-hover: var(--color-dark-300);
+  --color-primary-dark-active: var(--color-dark-500);
+  --color-on-primary-dark: var(--color-white); /* Text on blue buttons */
+
+  --color-button-bg-dark: var(--color-primary-dark);
+  --color-button-text-dark: var(--color-on-primary-dark);
+  --color-input-bg-dark: var(--color-bg-dark);
+  --color-input-text-dark: var(--color-text-dark);
+  --color-input-border-dark: var(--color-border-dark);
+}
+
+/* Outer Circle - Clockwise Rotation */
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-clockwise {
+  animation: rotateClockwise 8s linear infinite;
+}
+
+/* Inner Circle - Anti-Clockwise Rotation */
+@keyframes rotateAntiClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.rotate-anticlockwise {
+  animation: rotateAntiClockwise 8s linear infinite;
+}
