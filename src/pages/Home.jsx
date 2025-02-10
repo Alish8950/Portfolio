@@ -10,42 +10,16 @@ import {
 } from "../assets";
 import { useContext } from "react";
 import { ThemeContext } from "../context/themeContext";
-
-const CircularText = ({ items }) => {
-  return (
-    <div className="relative w-64 h-64 mx-auto">
-      <div className="absolute inset-0 rounded-full border border-gray-300"></div>
-      {items.map((item, index) => {
-        const angle = (index / items.length) * 360; // Calculate angle for each item
-        const x = 50 + 40 * Math.cos((angle * Math.PI) / 180); // 40 is the radius
-        const y = 50 + 40 * Math.sin((angle * Math.PI) / 180);
-
-        return (
-          <div
-            key={index}
-            className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            style={{
-              transform: `translate(-50%, -50%) rotate(${angle}deg)`,
-              transformOrigin: `${x}% ${y}%`,
-            }}
-          >
-            <div className="transform -rotate-90">{item}</div>
-          </div>
-        );
-      })}
-    </div>
-  );
-};
+import SkillsOrbit from "../components/SkillsOrbit";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
-  const skills = ["JavaScript", "TypeScript", "Node.js", "React", "Tailwind", "HTML", "CSS"];
 
   return (
     <>
       <Box className="mt-30">
         <Box className="grid grid-cols-2 gap-4">
-          <Box className="">
+          <Box>
             <Typography className="!text-7xl ">Hi, I am Alish</Typography>
             <TypeAnimation
               className="text-5xl font-bold text-primary-light dark:text-primary-dark"
@@ -88,7 +62,10 @@ const Home = () => {
                   <img src={LinkedinLogo} alt="linkedin" />
                 )}
               </a>
-              <a className="transition-transform duration-300 w-15 block hover:scale-120" href="mailto:alishallawadhi5@gmail.com">
+              <a
+                className="transition-transform duration-300 w-15 block hover:scale-120"
+                href="mailto:alishallawadhi5@gmail.com"
+              >
                 {theme === "dark" ? (
                   <img src={GmailLogo} alt="gmail" />
                 ) : (
@@ -108,9 +85,7 @@ const Home = () => {
               </a>
             </Box>
           </Box>
-          <Box>
-            
-          </Box>
+          <SkillsOrbit />
         </Box>
       </Box>
     </>
