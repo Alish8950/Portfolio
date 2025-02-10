@@ -11,6 +11,7 @@ import {
 import { useContext } from "react";
 import { ThemeContext } from "../context/themeContext";
 import SkillsOrbit from "../components/SkillsOrbit";
+import AboutMe from "../components/AboutMe";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -18,11 +19,11 @@ const Home = () => {
   return (
     <>
       <Box className="mt-30">
-        <Box className="grid grid-cols-2 gap-4">
+        <Box className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Box>
-            <Typography className="!text-7xl ">Hi, I am Alish</Typography>
+            <Typography className="!text-5xl lg:!text-7xl">Hi, I am Alish</Typography>
             <TypeAnimation
-              className="text-5xl font-bold text-primary-light dark:text-primary-dark"
+              className="text-4xl font-bold text-primary-light dark:text-primary-dark lg:text-5xl"
               sequence={[
                 // Same substring at the start will only be typed out once, initially
                 "Frontend Developer",
@@ -87,6 +88,7 @@ const Home = () => {
           </Box>
           <SkillsOrbit />
         </Box>
+          <AboutMe />
       </Box>
     </>
   );

@@ -3,7 +3,7 @@ import React from "react";
 const SkillsOrbit = () => {
   return (
     <>
-      <div className="relative flex px-20 w-full  flex-col items-center justify-center">
+      <div className="relative flex px-20 w-full flex-col items-center justify-center h-[360px]">
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center lg:text-8xl text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
           Skills
         </span>

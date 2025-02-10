@@ -50,7 +50,7 @@ function App() {
   }, [theme]);
   return (
     <>
-      <div className="h-screen bg-bg-light w-full dark:bg-bg-dark">
+      <div className="h-screen overflow-auto bg-bg-light w-full dark:bg-bg-dark">
         <div className="max-w-[1440px] mx-auto w-full px-6 py-5">
           <Header/>
           <Outlet />
