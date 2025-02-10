@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import { SoftobizLogo } from "../assets";
 
@@ -6,26 +6,26 @@ const WorkEx = () => {
   return (
     <>
       <Box>
-        <Typography className="!text-5xl text-center !mt-20">
+        <Typography className="text-center !text-4xl !mt-5 xs:!text-5xl xs:!mt-10 md:!mt-15">
           Work Experience
         </Typography>
         <Box className="mt-4">
-          <Box className="flex items-start gap-5">
-            <Box>
+          <Box className=" flex flex-col gap-5 items-center sm:flex sm:items-start sm:flex-row sm:gap-2">
+            <Box className="mr-4">
               <Box className="bg-bg-light p-3 rounded-lg">
                 <Box className="w-[120px]">
                   <img src={SoftobizLogo} alt="softobiz" />
                 </Box>
               </Box>
-              <Typography className="!text-gray-500 !font-medium !mt-4 dark:!text-gray-50">
+              <Typography className="!text-gray-500 !font-medium !mt-0 sm:!mt-4 dark:!text-gray-50">
                 Softobiz Technologies
               </Typography>
             </Box>
+            <Divider className="!border-border-dark dark:!border-border-light" orientation="vertical" flexItem />
             <Box>
-              <Typography className="!font-medium !text-xl">
-                Frontend Developer{" "}
+              <Typography className="!font-medium !text-xl leading-none">
+                Frontend Developer
                 <span className="text-xs italic text-gray-500 font-medium dark:text-gray-50">
-                  {" "}
                   ( Full-Time )
                 </span>
               </Typography>
