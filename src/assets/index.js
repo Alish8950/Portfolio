@@ -5,6 +5,7 @@ import GmailLogo from "./images/gmail-logo.svg";
 import InstaLogo from "./images/insta-logo.svg";
 import LinkedinLogo from "./images/linkedin-logo.svg";
 import GithubLogoWhite from "./images/github-logo-white.svg";
+import SoftobizLogo from "./images/softobiz-logo.svg";
 
 export {
   Moon,
@@ -14,4 +15,5 @@ export {
   InstaLogo,
   LinkedinLogo,
   GithubLogoWhite,
+  SoftobizLogo,
 };

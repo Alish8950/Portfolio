@@ -7,6 +7,13 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.MuiTypography-root {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+
+}
 
 * {
   box-sizing: border-box;
@@ -27,11 +34,11 @@ p {
   /* --------------------------------------------------
        Base Fonts (unchanged)
     -------------------------------------------------- */
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+  /* --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    "Liberation Mono", "Courier New", monospace; */
 
   /* --------------------------------------------------
        Base Colors (for common use)
@@ -43,6 +50,8 @@ p {
        Gray Color Pallete (for common use)
     -------------------------------------------------- */
   --color-gray-50: #ededed;
+  --color-gray-200: #a7a7a7;
+  --color-gray-500: #4b5563;
 
   /* ==================================================
        LIGHT THEME COLORS
@@ -108,7 +117,6 @@ p {
   --color-input-text-dark: var(--color-text-dark);
   --color-input-border-dark: var(--color-border-dark);
 
-
   /* Breakpoint theme */
-  --breakpoint-xs: 440px
+  --breakpoint-xs: 440px;
 }
