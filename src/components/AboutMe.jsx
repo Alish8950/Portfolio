@@ -33,7 +33,7 @@ const AboutMe = () => {
           </Typography>
         </Box>
         <Box className="grid grid-cols-1 gap-10 mt-5 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2">
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-4 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-4 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173545/html5-original_daidp5.svg"
@@ -44,7 +44,7 @@ const AboutMe = () => {
               HTML
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/css3-plain_wylfcx.svg"
@@ -55,7 +55,7 @@ const AboutMe = () => {
               CSS
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173543/javascript-original_vaq5nn.svg"
@@ -66,7 +66,7 @@ const AboutMe = () => {
               JavaScript
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173542/tailwindcss-icon_fc1dot.svg"
@@ -77,7 +77,7 @@ const AboutMe = () => {
                 Tailwind
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/bootstrap-plain_dmdiy4.svg"
@@ -88,7 +88,7 @@ const AboutMe = () => {
               Bootstrap
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173542/react-original-wordmark_stxchu.svg"
@@ -99,7 +99,7 @@ const AboutMe = () => {
               React
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/typescript-original_ifiuwf.svg"
@@ -110,7 +110,7 @@ const AboutMe = () => {
               Typescript
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/redux-original_cbehzx.svg"
@@ -121,7 +121,7 @@ const AboutMe = () => {
               Redux
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173546/nodejs-original-wordmark_lsvdrj.svg"
@@ -132,7 +132,7 @@ const AboutMe = () => {
               NodeJs
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173546/express-original-wordmark_krqtk9.svg"
@@ -143,7 +143,7 @@ const AboutMe = () => {
               Express
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/mongodb-plain_p7svdd.svg"
@@ -154,7 +154,7 @@ const AboutMe = () => {
               MongoDB
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/git-plain_zfhpwb.svg"
@@ -165,7 +165,7 @@ const AboutMe = () => {
               GitHub
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/getpostman-icon_omefl3.svg"
@@ -176,7 +176,7 @@ const AboutMe = () => {
               Postman
             </Typography>
           </Box>
-          <Box className="flex w-full max-w-[192px] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light">
+          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
             <Box className="w-8">
               <img
                 src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/firebase-icon_m9vuc8.svg"
