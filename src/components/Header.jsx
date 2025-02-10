@@ -30,7 +30,7 @@ const Header = () => {
           <span className="text-5xl inline-block w-2 h-2 ml-[-8px]">&gt;</span>
         </a>
         <Box className="flex items-center gap-4">
-          <Box className="group flex items-center gap-4">
+          <Box className="group hidden items-center gap-4 md:flex">
             <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
               Home
             </Box>
