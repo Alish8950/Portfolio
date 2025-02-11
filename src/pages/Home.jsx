@@ -96,7 +96,7 @@ const Home = () => {
         <AboutMe />
         <WorkEx />
         <Projects />
-        <ContactMe />
+        {/* <ContactMe /> */}
       </Box>
     </>
   );

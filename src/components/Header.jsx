@@ -23,7 +23,9 @@ const Header = () => {
         //   backgroundImage:
         //     "linear-gradient(137deg, rgba(255, 255, 255, 0.05) 17%, transparent 37%, transparent 26%, rgba(255, 255, 255, 0.05) 43%, rgba(255, 255, 255, 0.05) 23%, transparent 65%, transparent)",
         // }}
-        className={`sticky z-50 top-5 flex items-center bg-bg-light justify-between w-full border border-border-light rounded-full px-4 py-2 h-[65px] dark:border-border-dark ${theme === "dark" ? "header-dark" : "header-light"}`}
+        className={`sticky z-50 top-5 flex items-center bg-bg-light justify-between w-full border border-border-light rounded-full px-4 py-2 h-[65px] dark:border-border-dark ${
+          theme === "dark" ? "header-dark" : "header-light"
+        }`}
       >
         <a
           href="https://www.linkedin.com/in/alish-allawadhi-60a883219"
@@ -38,8 +40,8 @@ const Header = () => {
           <span className="text-5xl inline-block w-2 h-2 ml-[-8px]">&gt;</span>
         </a>
         <Box className="flex items-center gap-4">
-          <Box className="group hidden items-center gap-4 md:flex">
-            <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
+          <Box className="group flex items-center gap-4">
+            {/* <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
               Home
             </Box>
             <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
@@ -50,9 +52,9 @@ const Header = () => {
             </Box>
             <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
               Projects
-            </Box>
+            </Box> */}
             <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
-              Contact
+              <a href="https://forms.gle/2ptALRsCshB9xe5J9" target="_blank">Contact</a>
             </Box>
           </Box>
           <Box onClick={handleClick} className="w-5 cursor-pointer">
