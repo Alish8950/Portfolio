@@ -30,7 +30,7 @@ const WorkEx = () => {
                 </span>
               </Typography>
               <Typography className="!text-xs !font-medium">
-                JUL 23 - Present | Mohali, Punjab (ON-SITE)
+                JUL 22 - Present | Mohali, Punjab (ON-SITE)
               </Typography>
               <Box className="mt-3 flex flex-col gap-2">
                 <Typography className="!text-gray-500 !font-extralight !text-xl dark:!text-gray-50">

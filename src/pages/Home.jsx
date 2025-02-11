@@ -13,6 +13,7 @@ import { ThemeContext } from "../context/themeContext";
 import SkillsOrbit from "../components/SkillsOrbit";
 import AboutMe from "../components/AboutMe";
 import WorkEx from "../components/WorkEx";
+import Projects from "../components/Projects";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -93,6 +94,7 @@ const Home = () => {
         </Box>
         <AboutMe />
         <WorkEx />
+        <Projects />
       </Box>
     </>
   );

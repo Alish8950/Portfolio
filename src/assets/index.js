@@ -6,6 +6,10 @@ import InstaLogo from "./images/insta-logo.svg";
 import LinkedinLogo from "./images/linkedin-logo.svg";
 import GithubLogoWhite from "./images/github-logo-white.svg";
 import SoftobizLogo from "./images/softobiz-logo.svg";
+import Aurora from "./images/aurora.png";
+import CFCSus from "./images/cfc-sus.png";
+import ClientpointMe from "./images/clientpoint-me.png";
+import ClientpointNet from "./images/clientpoint-net.png";
 
 export {
   Moon,
@@ -16,4 +20,8 @@ export {
   LinkedinLogo,
   GithubLogoWhite,
   SoftobizLogo,
+  Aurora,
+  CFCSus,
+  ClientpointMe,
+  ClientpointNet,
 };
