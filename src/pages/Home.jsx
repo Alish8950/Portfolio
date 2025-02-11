@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <>
-      <Box className="mt-30">
+      <Box className="mt-10 xs:mt-15 sm:mt-20 lg:mt-25">
         <Box className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Box>
             <Typography className="!text-[40px] lg:!text-7xl xs:!text-5xl">
