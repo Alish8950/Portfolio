@@ -33,160 +33,19 @@ const AboutMe = () => {
           </Typography>
         </Box>
         <Box className="grid grid-cols-1 gap-10 mt-5 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2">
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-4 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173545/html5-original_daidp5.svg"
-                alt="HTML"
-              />
+          {techData.map((tech, index) => (
+            <Box
+              key={index}
+              className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]"
+            >
+              <Box className="w-8">
+                <img src={tech.src} alt={tech.alt} />
+              </Box>
+              <Typography className=" !text-text-light">
+                {tech.label}
+              </Typography>
             </Box>
-            <Typography className=" !text-text-light">
-              HTML
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/css3-plain_wylfcx.svg"
-                alt="CSS"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              CSS
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173543/javascript-original_vaq5nn.svg"
-                alt="JS"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              JavaScript
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173542/tailwindcss-icon_fc1dot.svg"
-                alt="Tailwind"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-                Tailwind
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/bootstrap-plain_dmdiy4.svg"
-                alt="Bootstrap"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              Bootstrap
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173542/react-original-wordmark_stxchu.svg"
-                alt="React"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              React
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/typescript-original_ifiuwf.svg"
-                alt="TS"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              Typescript
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/redux-original_cbehzx.svg"
-                alt="Redux"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              Redux
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173546/nodejs-original-wordmark_lsvdrj.svg"
-                alt="NodeJs"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              NodeJs
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173546/express-original-wordmark_krqtk9.svg"
-                alt="Express"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              Express
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/mongodb-plain_p7svdd.svg"
-                alt="MongoDB"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              MongoDB
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/git-plain_zfhpwb.svg"
-                alt="GitHub"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              GitHub
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/getpostman-icon_omefl3.svg"
-                alt="Postman"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              Postman
-            </Typography>
-          </Box>
-          <Box className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]">
-            <Box className="w-8">
-              <img
-                src="https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/firebase-icon_m9vuc8.svg"
-                alt="Firebase"
-              />
-            </Box>
-            <Typography className=" !text-text-light">
-              Firebase
-            </Typography>
-          </Box>
+          ))}
         </Box>
       </Box>
     </>
@@ -194,3 +53,76 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
+const techData = [
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173545/html5-original_daidp5.svg",
+    alt: "HTML",
+    label: "HTML",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/css3-plain_wylfcx.svg",
+    alt: "CSS",
+    label: "CSS",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173543/javascript-original_vaq5nn.svg",
+    alt: "JS",
+    label: "JavaScript",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173542/tailwindcss-icon_fc1dot.svg",
+    alt: "Tailwind",
+    label: "Tailwind",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/bootstrap-plain_dmdiy4.svg",
+    alt: "Bootstrap",
+    label: "Bootstrap",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173542/react-original-wordmark_stxchu.svg",
+    alt: "React",
+    label: "React",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/typescript-original_ifiuwf.svg",
+    alt: "TS",
+    label: "Typescript",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/redux-original_cbehzx.svg",
+    alt: "Redux",
+    label: "Redux",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173546/nodejs-original-wordmark_lsvdrj.svg",
+    alt: "NodeJs",
+    label: "NodeJs",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173546/express-original-wordmark_krqtk9.svg",
+    alt: "Express",
+    label: "Express",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/mongodb-plain_p7svdd.svg",
+    alt: "MongoDB",
+    label: "MongoDB",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/git-plain_zfhpwb.svg",
+    alt: "GitHub",
+    label: "GitHub",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/getpostman-icon_omefl3.svg",
+    alt: "Postman",
+    label: "Postman",
+  },
+  {
+    src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/firebase-icon_m9vuc8.svg",
+    alt: "Firebase",
+    label: "Firebase",
+  },
+];

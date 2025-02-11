@@ -23,11 +23,11 @@ const Home = () => {
       <Box className="mt-30">
         <Box className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Box>
-            <Typography className="!text-5xl lg:!text-7xl">
+            <Typography className="!text-[40px] lg:!text-7xl xs:!text-5xl">
               Hi, I am Alish
             </Typography>
             <TypeAnimation
-              className="text-4xl font-bold text-primary-light dark:text-primary-dark lg:text-5xl"
+              className="text-[28px] font-bold text-primary-light dark:text-primary-dark lg:text-5xl xs:text-4xl"
               sequence={[
                 // Same substring at the start will only be typed out once, initially
                 "Frontend Developer",
