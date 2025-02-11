@@ -14,6 +14,7 @@ import SkillsOrbit from "../components/SkillsOrbit";
 import AboutMe from "../components/AboutMe";
 import WorkEx from "../components/WorkEx";
 import Projects from "../components/Projects";
+import ContactMe from "../components/ContactMe";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -46,7 +47,7 @@ const Home = () => {
             </Typography>
             <Box className="mt-5 flex items-center gap-4">
               <a
-                className="transition-transform duration-300 w-12 block hover:scale-120"
+                className="transition-transform duration-300 w-8 xs:w-12 block hover:scale-120"
                 href="https://github.com/Alish8950"
                 target="_blank"
               >
@@ -57,7 +58,7 @@ const Home = () => {
                 )}
               </a>
               <a
-                className="transition-transform duration-300 w-12 block hover:scale-120"
+                className="transition-transform duration-300 w-8 xs:w-12 block hover:scale-120"
                 href="https://www.linkedin.com/in/alish-allawadhi-60a883219"
                 target="_blank"
               >
@@ -68,7 +69,7 @@ const Home = () => {
                 )}
               </a>
               <a
-                className="transition-transform duration-300 w-15 block hover:scale-120"
+                className="transition-transform duration-300 w-10 xs:w-15 block hover:scale-120"
                 href="mailto:alishallawadhi5@gmail.com"
               >
                 {theme === "dark" ? (
@@ -78,7 +79,7 @@ const Home = () => {
                 )}
               </a>
               <a
-                className="transition-transform duration-300 w-12 block hover:scale-120"
+                className="transition-transform duration-300 w-8 xs:w-12 block hover:scale-120"
                 href="https://www.instagram.com/alish_allawadhi/"
                 target="_blank"
               >
@@ -95,6 +96,7 @@ const Home = () => {
         <AboutMe />
         <WorkEx />
         <Projects />
+        <ContactMe />
       </Box>
     </>
   );

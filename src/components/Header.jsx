@@ -17,10 +17,18 @@ const Header = () => {
 
   return (
     <>
-      <Box className="flex items-center justify-between w-full border border-border-light dark:border-border-dark rounded-full px-4 py-2 h-[65px]">
+      <Box
+        // sx={{
+        //   background: "#1f2937",
+        //   backgroundImage:
+        //     "linear-gradient(137deg, rgba(255, 255, 255, 0.05) 17%, transparent 37%, transparent 26%, rgba(255, 255, 255, 0.05) 43%, rgba(255, 255, 255, 0.05) 23%, transparent 65%, transparent)",
+        // }}
+        className={`sticky z-50 top-5 flex items-center bg-bg-light justify-between w-full border border-border-light rounded-full px-4 py-2 h-[65px] dark:border-border-dark ${theme === "dark" ? "header-dark" : "header-light"}`}
+      >
         <a
-          href="#"
+          href="https://www.linkedin.com/in/alish-allawadhi-60a883219"
           className="font-[Agustina] text-primary-dark dark:text-primary-light mb-[14px]"
+          target="_blank"
         >
           <span className="text-5xl inline-block w-2 h-2">&lt;</span>
           <span className="text-3xl inline-block">Alish</span>

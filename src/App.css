@@ -26,3 +26,31 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+
+.header-dark {
+  background: #1f2937f7;
+  background-image: linear-gradient(
+    137deg,
+    rgba(255, 255, 255, 0.05) 17%,
+    transparent 37%,
+    transparent 26%,
+    rgba(255, 255, 255, 0.05) 43%,
+    rgba(255, 255, 255, 0.05) 23%,
+    transparent 65%,
+    transparent
+  );
+}
+
+.header-light {
+  background: #f9fafbf7; /* Light base color */
+  background-image: linear-gradient(
+    137deg,
+    rgba(0, 0, 0, 0.05) 17%,
+    transparent 37%,
+    transparent 26%,
+    rgba(0, 0, 0, 0.05) 43%,
+    rgba(0, 0, 0, 0.05) 23%,
+    transparent 65%,
+    transparent
+  );
+}
