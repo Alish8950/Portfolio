@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Box, Menu, MenuItem, Typography } from "@mui/material";
-import { Moon, Sun } from "../assets";
+import { Moon, Resume, Sun } from "../assets";
 import { ThemeContext } from "../context/themeContext";
 
 const Header = () => {
@@ -13,6 +13,15 @@ const Header = () => {
   };
   const handleClose = () => {
     setThemeEl(null);
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = Resume;
+    link.setAttribute("download", "Alish_Resume.pdf"); // Set the download file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -49,12 +58,14 @@ const Header = () => {
             </Box>
             <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
               Experience
+            </Box>*/}
+            <Box onClick={handleDownload} className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
+              Resume
             </Box>
             <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
-              Projects
-            </Box> */}
-            <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
-              <a href="https://forms.gle/2ptALRsCshB9xe5J9" target="_blank">Contact</a>
+              <a href="https://forms.gle/2ptALRsCshB9xe5J9" target="_blank">
+                Contact
+              </a>
             </Box>
           </Box>
           <Box onClick={handleClick} className="w-5 cursor-pointer">

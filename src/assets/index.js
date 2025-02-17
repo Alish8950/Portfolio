@@ -10,6 +10,7 @@ import Aurora from "./images/aurora.png";
 import CFCSus from "./images/cfc-sus.png";
 import ClientpointMe from "./images/clientpoint-me.png";
 import ClientpointNet from "./images/clientpoint-net.png";
+import Resume from "./pdf/resume.pdf"
 
 export {
   Moon,
@@ -24,4 +25,5 @@ export {
   CFCSus,
   ClientpointMe,
   ClientpointNet,
+  Resume
 };
