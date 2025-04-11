@@ -59,9 +59,9 @@ const Header = () => {
             <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
               Experience
             </Box>*/}
-            <Box onClick={handleDownload} className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
+            {/* <Box onClick={handleDownload} className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
               Resume
-            </Box>
+            </Box> */}
             <Box className="ease-out duration-300 transition-all text-text-light dark:text-text-dark font-medium cursor-pointer hover:text-primary-light-hover dark:hover:text-primary-dark-hover">
               <a href="https://forms.gle/2ptALRsCshB9xe5J9" target="_blank">
                 Contact
