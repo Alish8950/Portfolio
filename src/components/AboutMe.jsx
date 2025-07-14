@@ -37,6 +37,7 @@ const AboutMe = () => {
             <Box
               key={index}
               className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]"
+              onClick={() => window.open(tech.doc, '_blank')}
             >
               <Box className="w-8">
                 <img src={tech.src} alt={tech.alt} />
@@ -59,70 +60,85 @@ const techData = [
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173545/html5-original_daidp5.svg",
     alt: "HTML",
     label: "HTML",
+    doc: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/css3-plain_wylfcx.svg",
     alt: "CSS",
     label: "CSS",
+    doc: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173543/javascript-original_vaq5nn.svg",
     alt: "JS",
     label: "JavaScript",
+    doc: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173542/tailwindcss-icon_fc1dot.svg",
     alt: "Tailwind",
     label: "Tailwind",
+    doc: "https://tailwindcss.com/docs",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/bootstrap-plain_dmdiy4.svg",
     alt: "Bootstrap",
     label: "Bootstrap",
+    doc: "https://getbootstrap.com/docs",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173542/react-original-wordmark_stxchu.svg",
     alt: "React",
     label: "React",
+    doc: "https://reactjs.org/docs/getting-started.html",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/typescript-original_ifiuwf.svg",
     alt: "TS",
     label: "Typescript",
+    doc: "https://www.typescriptlang.org/docs/",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/redux-original_cbehzx.svg",
     alt: "Redux",
     label: "Redux",
+    doc: "https://redux.js.org/introduction/getting-started",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173546/nodejs-original-wordmark_lsvdrj.svg",
     alt: "NodeJs",
     label: "NodeJs",
+    doc: "https://nodejs.org/en/docs",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173546/express-original-wordmark_krqtk9.svg",
     alt: "Express",
     label: "Express",
+    doc: "https://expressjs.com/en/starter/installing.html",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/mongodb-plain_p7svdd.svg",
     alt: "MongoDB",
     label: "MongoDB",
+    doc: "https://www.mongodb.com/docs/",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/git-plain_zfhpwb.svg",
     alt: "GitHub",
     label: "GitHub",
+    doc: "https://docs.github.com/en",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173544/getpostman-icon_omefl3.svg",
     alt: "Postman",
     label: "Postman",
+    doc: "https://learning.postman.com/docs/getting-started/introduction/",
   },
   {
     src: "https://res.cloudinary.com/dk1pnr6pl/image/upload/v1739173541/firebase-icon_m9vuc8.svg",
     alt: "Firebase",
     label: "Firebase",
+    doc: "https://firebase.google.com/docs",
   },
 ];
+
