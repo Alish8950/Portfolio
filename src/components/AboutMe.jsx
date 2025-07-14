@@ -36,7 +36,7 @@ const AboutMe = () => {
           {techData.map((tech, index) => (
             <Box
               key={index}
-              className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px]"
+              className="flex w-full max-w-[100%] items-center gap-3 bg-gray-50 py-3 px-5 rounded-lg dark:bg-bg-light xs:max-w-[192px] cursor-pointer"
               onClick={() => window.open(tech.doc, '_blank')}
             >
               <Box className="w-8">
