@@ -8,7 +8,7 @@ export const profile = {
   location: "India · Open to remote",
   availability: "Open to remote frontend roles",
   email: "alishallawadhi5@gmail.com",
-  linkedin: "https://www.linkedin.com/in/alish-allawadhi-60a883219",
+  linkedin: "https://www.linkedin.com/in/alish-allawadhi",
   github: "https://github.com/Alish8950",
   summary:
     "Frontend developer with 4+ years of experience building production React and Next.js applications in TypeScript. I currently build MasterBrand's Rebode kitchen-planning platform, where I own the shared navigation library used by four Next.js apps. I care about clean component architecture, measurable product impact and shipping reliably in distributed agile teams.",
